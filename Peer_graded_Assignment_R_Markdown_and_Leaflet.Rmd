@@ -1,0 +1,30 @@
+---
+title: 'Peer-graded Assignment: R Markdown and Leaflet'
+author: "Vijay Mishra"
+date: "26 March 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown and Leaflet
+Create a web page using R Markdown that features a map created with Leaflet.
+
+Host your webpage on GitHub Pages
+
+This webpage contain the date that you created the document, and it contain a map created with Leaflet.
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=28.691422, lng= 77.157387, popup="Dr. Vijay Pal Memorial Library")
+my_map
+```
+
+
